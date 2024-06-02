@@ -28,6 +28,27 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+# Rest_framework configuration
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+
+    ],
+    
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    
+}
+
+# Djoser configuration
+
+DJOSER={"USER_ID_FIELD":"username"}
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +60,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'restaurant',
     'rest_framework',
+    'rest_framework.authtoken',
+    'djoser',
 ]
 
 MIDDLEWARE = [
