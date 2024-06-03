@@ -6,7 +6,7 @@ Peer-review project as part for the fulfillment of Meta Back-end Developer Capst
 ## Note : model/view/serializer for Menu is renamed to MenuItem
 
 
-## Intial Configuration
+## Initial Configuration
 
 before initializing my project, please carefully follow the step in order to avoid errors:
 
