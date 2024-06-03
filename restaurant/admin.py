@@ -5,3 +5,4 @@ from .models import *
 
 
 admin.site.register(MenuItem)
+admin.site.register(Booking)
